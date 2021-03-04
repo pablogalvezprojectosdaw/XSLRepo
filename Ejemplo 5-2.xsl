@@ -4,9 +4,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
     <html>
     <body>
-    <h1>Mi biblioteca</h1>
+    <h1>Mi biblioteca personal</h1>
         <table>
-            <tr bgcolor="#887788">
+            <tr bgcolor="#887755">
                 <th>Título</th>
                 <th>Autor</th>
             </tr>
@@ -19,5 +19,5 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         </table>
     </body>
     </html>
-    </xsl:template>
-    </xsl:stylesheet>
+</xsl:template>
+</xsl:stylesheet>
