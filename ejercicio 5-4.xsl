@@ -7,17 +7,17 @@
                 <h1>Mi biblioteca personal</h1>
                 <table>
                     <tr bgcolor="#11f7ec">
+                        <th>ISBN</th>
                         <th>Título</th>
                         <th>Autor</th>
                         <th>Precio</th>
-                        <th>IBSN</th>
                     </tr>
                     <xsl:for-each select="libreria/libro">
                         <tr>
                             <xsl:choose>
                                 <xsl:when test="precio &lt; 25.00">
                                     <td bgcolor="#00ff00">
-                                        <xsl:value-of select="isbn"/>
+                                        <xsl:value-of select="ibsn"/>
                                     </td>
                                     <td bgcolor="#00ff00">
                                         <xsl:value-of select="titulo"/>
@@ -31,7 +31,7 @@
                                 </xsl:when>
                                 <xsl:when test="precio &gt; 25.00">
                                     <td bgcolor="#ff0000">
-                                        <xsl:value-of select="isbn"/>
+                                        <xsl:value-of select="ibsn"/>
                                     </td>
                                     <td bgcolor="#ff0000">
                                         <xsl:value-of select="titulo"/>
